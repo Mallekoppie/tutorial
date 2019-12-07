@@ -9,12 +9,13 @@
     <span>{{ ResponseData }}</span>
     <div />
     <b-button @click="getData">Call APi</b-button>
+    <div />
   </div>
 </template>
 
 <script>
 import * as axios from "axios";
-// import {API} from "@/shared/config";
+import {API} from "@/shared/config";
 
 export default {
   name: "ApiGet",
@@ -23,10 +24,15 @@ export default {
       ResponseData: {}
     };
   },
+  created() {
+    console.log(
+      "Envonment var value for backend: " + API
+    );
+  },
   methods: {
     async getData() {
       try {
-        const response = await axios.get("http://localhost:10000/getuser");
+        const response = await axios.get(`${API}/getuser`);
         console.log(response);
         this.ResponseData = response.data;
       } catch (error) {

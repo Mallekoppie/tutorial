@@ -17,6 +17,7 @@
 
 <script>
 import * as axios from "axios";
+import {API} from "@/shared/config";
 
 export default {
   name: "ApiPost",
@@ -34,7 +35,7 @@ export default {
     async submit() {
       try {
         const response = await axios.post(
-          "http://localhost:10000/postuser",
+          `${API}/postuser`,
           this.user
         );
 
