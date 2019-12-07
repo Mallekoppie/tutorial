@@ -15,14 +15,17 @@
               <b-dropdown-item href="/component-binding">Subcomponent Binding</b-dropdown-item>
               <b-dropdown-item href="#">FA</b-dropdown-item>
             </b-nav-item-dropdown>
-            <b-nav-item href="#">Api Call</b-nav-item>
+            <b-nav-item-dropdown text="Api Call" right>              
+              <b-dropdown-item href="/api-get">Get</b-dropdown-item>
+              <b-dropdown-item href="/api-post">Post</b-dropdown-item>
+              <b-dropdown-item href="#">other</b-dropdown-item>
+            </b-nav-item-dropdown>            
             <b-nav-item href="#">Grafana</b-nav-item>
             <b-nav-item href="#">Prometheus</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">            
-
+          <b-navbar-nav class="ml-auto">
             <b-nav-item-dropdown text="Settings" right>
               <b-dropdown-item href="#">EN</b-dropdown-item>
               <b-dropdown-item href="#">ES</b-dropdown-item>

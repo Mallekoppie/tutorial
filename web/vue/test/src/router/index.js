@@ -3,7 +3,9 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import TextBinding from "../views/TextBinding.vue";
 import ListBinding from "../views/ListBinding.vue";
-import ComponentBinding from "../views/ComponentBinding.vue"
+import ComponentBinding from "../views/ComponentBinding.vue";
+import ApiGet from "../views/api/apiget.vue";
+import ApiPost from "../views/api/apipost.vue";
 
 Vue.use(VueRouter);
 
@@ -25,8 +27,18 @@ const routes = [
   },
   {
     path: "/component-binding",
-    name: "componentbinding",
+    name: "ComponentBinding",
     component: ComponentBinding
+  },
+  {
+    path: "/api-get",
+    name: "ApiGet",
+    component: ApiGet
+  },
+  {
+    path: "/api-post",
+    name: "ApiPost",
+    component: ApiPost
   },
   {
     path: "/about",
