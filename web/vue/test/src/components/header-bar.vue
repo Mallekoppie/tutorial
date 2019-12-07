@@ -10,8 +10,12 @@
           <b-navbar-nav>
             <b-nav-item href="#">Link</b-nav-item>
             <b-nav-item href="/textbinding">Text Binding</b-nav-item>
-            <b-nav-item href="#">List Binding</b-nav-item>
-            <b-nav-item href="#">Api Call</b-nav-item>            
+            <b-nav-item href="/listbinding">List Binding</b-nav-item>
+            <b-nav-item-dropdown text="Components" right>
+              <b-dropdown-item href="/component-binding">Subcomponent Binding</b-dropdown-item>
+              <b-dropdown-item href="#">FA</b-dropdown-item>
+            </b-nav-item-dropdown>
+            <b-nav-item href="#">Api Call</b-nav-item>
             <b-nav-item href="#">Grafana</b-nav-item>
             <b-nav-item href="#">Prometheus</b-nav-item>
           </b-navbar-nav>

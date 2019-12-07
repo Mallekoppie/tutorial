@@ -1,15 +1,17 @@
 <template>
-    <div>
-        <p>Text binding here </p>
-    </div>
+  <div>
+    <p>Text binding here: {{ MyText }}</p>
+    <input type="text" v-model="MyText" />
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  name: "TextBinding",
+  data() {
+    return {
+      MyText: "This text has been bound"
+    };
+  }
+};
 </script>
-
-<style lang="scss" scoped>
-
-</style>

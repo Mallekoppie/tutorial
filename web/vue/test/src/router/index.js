@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import TextBinding from "../views/TextBinding.vue";
+import ListBinding from "../views/ListBinding.vue";
+import ComponentBinding from "../views/ComponentBinding.vue"
 
 Vue.use(VueRouter);
 
@@ -15,6 +17,16 @@ const routes = [
     path: "/textbinding",
     name: "textbinding",
     component: TextBinding
+  },
+  {
+    path: "/listbinding",
+    name: "listbinding",
+    component: ListBinding
+  },
+  {
+    path: "/component-binding",
+    name: "componentbinding",
+    component: ComponentBinding
   },
   {
     path: "/about",
